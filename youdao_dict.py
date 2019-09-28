@@ -22,4 +22,10 @@ def crawler(url):
         print('='*20)
 
 if __name__=='__main__':
-    crawler('http://dict.youdao.com/w/')
+    while True:
+        crawler('http://dict.youdao.com/w/')
+        press = input("Input q to quit it\n")
+        if press=='q':
+            break;
+        else:
+            continue;
